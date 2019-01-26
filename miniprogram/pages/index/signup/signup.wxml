@@ -1,0 +1,45 @@
+<view class="container">
+    <view style="margin-top: 40rpx;">
+        <label style="font-size: 17pt;">企业注册</label>
+    </view>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class="section common_style" style="margin-top: 50rpx">
+            <input name="input" placeholder="企业名称" />
+        </view>
+        <view class="section">
+            <picker
+                    mode="multiSelector"
+                    bindchange="bindMultiPickerChange"
+                    value="{{multiIndex}}"
+                    range="{{multiArray}}"
+            >
+                <view class="flex-wrp" style="flex-direction: row">
+                    <view class="flex-item-left">
+                        <view class="flex-wrp" style="flex-direction: row">
+                            <view class="flex-item-quarter" style="text-decoration: underline">{{multiArray[0][multiIndex[0]]}}</view>
+                            <view class="flex-item-quarter" style="text-decoration: underline">{{multiArray[1][multiIndex[1]]}}</view>
+                        </view>
+                    </view>
+                    <view class="flex-item-right"><input name="input" placeholder="报价"/></view>
+                </view>
+            </picker>
+        </view>
+        <view class="common_style">
+            <input name="input" placeholder="电话" />
+        </view>
+        <view class="page-section common_style">
+            <textarea style="height: 200rpx" placeholder="企业描述"/>
+        </view>
+        <view class="btn-area">
+            <button formType="submit" class="signup__btn">注册</button>
+        </view>
+    </form>
+    <view>
+        <navigator url="../login/login?title=login" open-type="navigate">
+            <label style="font-size: 13pt;text-decoration: underline">已有账号, 进行登录</label>
+        </navigator>
+    </view>
+    <view>
+        <label style="font-size: 11pt;">注册即视为同意《用户使用协议》</label>
+    </view>
+</view>

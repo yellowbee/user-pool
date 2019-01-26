@@ -1,0 +1,15 @@
+<view>
+    <view wx:for="{{testees}}" wx:for-item="testee">
+        <view class="post">
+            <view>
+                {{testee.name}} | {{testee.industry}} | {{testee.sex}} | {{testee.dob}}岁 | {{testee.edu}} | {{testee.price}}元/小时
+            </view>
+            <view style="margin: 20rpx 0">
+                {{testee.desc}}
+            </view>
+            <view>
+                电话: {{testee.phone}}   微信号: {{testee.wechat}}
+            </view>
+        </view>
+    </view>
+</view>

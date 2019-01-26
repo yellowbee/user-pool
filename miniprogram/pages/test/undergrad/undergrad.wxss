@@ -1,0 +1,13 @@
+page {
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.post {
+    width: 710rpx;
+    background-color: white;
+    margin-bottom: 5rpx;
+    padding: 20rpx 20rpx;
+}

@@ -1,0 +1,10 @@
+<view class="container">
+    <view><label style="font-size: 17pt;">使用指南</label></view>
+    <view>
+        <image
+            style="width: 540rpx;"
+            src="../../../images/how_it_works.png"
+            mode="widthFix"
+        ></image>
+    </view>
+</view>

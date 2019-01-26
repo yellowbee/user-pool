@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 用户 openid -->
+  <view class="userinfo">
+    <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+    ></button>
+    <navigator url="login/login?title=login" open-type="navigate">
+      <label style="text-decoration: underline">登录查看更多信息</label>
+    </navigator>
+      <view>
+          {{userInfo.openid}}
+      </view>
+  </view>
+
+  <view class="common_style">
+      <view class="flex-wrp" style="flex-direction: row">
+          <view class="flex-item-left"><label>分享程序</label></view>
+          <view class="flex-item-right"><text decode="true" class="me__arrow">&gt;</text></view>
+      </view>
+  </view>
+  <view class="common_style">
+      <view class="flex-wrp" style="flex-direction: row">
+          <view class="flex-item-left"><label>联系我们 / 改进建议</label></view>
+          <view class="flex-item-right"><text decode="true" class="me__arrow">&gt;</text></view>
+      </view>
+  </view>
+  <navigator url="howItWorks/howItWorks" open-type="navigate" class="common_style">
+    <view class="flex-wrp" style="flex-direction: row">
+        <view class="flex-item-left"><label>使用指南</label></view>
+        <view class="flex-item-right"><text decode="true" class="me__arrow">&gt;</text></view>
+    </view>
+  </navigator>
+
+</view>

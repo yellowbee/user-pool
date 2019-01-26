@@ -1,0 +1,36 @@
+<view class="container">
+    <view style="margin-top: 40rpx;">
+        <label style="font-size: 17pt;">企业用户发布任务</label>
+    </view>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class="section common_style" style="margin-top: 50rpx">
+            <input name="title" placeholder="任务名称" />
+        </view>
+        <view class="section common_style">
+            <picker
+                    mode="multiSelector"
+                    bindchange="bindMultiPickerChange"
+                    value="{{multiIndex}}"
+                    range="{{multiArray}}"
+                    name="personalInfo"
+            >
+                <view class="flex-wrp" style="flex-direction: row">
+                    <view class="flex-item-trio" style="text-decoration: underline">{{multiArray[0][multiIndex[0]]}}</view>
+                    <view class="flex-item-trio" style="text-decoration: underline">{{multiArray[1][multiIndex[1]]}}</view>
+                    <view class="flex-item-trio" style="text-decoration: underline">{{multiArray[2][multiIndex[2]]}}</view>
+                    <view class="flex-item-industry" style="text-decoration: underline">{{multiArray[3][multiIndex[3]]}}</view>
+                </view>
+            </picker>
+        </view>
+        <view class="flex-wrp" style="flex-direction: row">
+            <view class="flex-item-left"><input name="price" placeholder="报价(时)" /></view>
+            <view class="flex-item-right"><input name="phone" placeholder="电话" /></view>
+        </view>
+        <view class="page-section common_style">
+                <textarea name="desc" auto-focus="true" style="height: 200rpx" placeholder="任务描述"/>
+        </view>
+        <view class="btn-area">
+            <button formType="submit" class="post__btn">发布</button>
+        </view>
+    </form>
+</view>

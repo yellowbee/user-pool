@@ -1,0 +1,31 @@
+<navigator url="post/post" open-type="navigate">
+    <button class="tasks__btn">发布新任务</button>
+</navigator>
+
+<view wx:for="{{tasks}}" wx:for-item="task">
+    <view class="post">
+        <view>
+            <view class="item-left" style="display: inline-block;">
+                {{task.title}} | {{task.price}}元/小时
+            </view>
+            <view style="display: inline-block;">
+                <button bindtap="deleteTask" id="{{task._id}}" size="mini">删除</button>
+            </view>
+        </view>
+
+        <view>
+            {{task.desc}}
+        </view>
+        <view>
+            电话: {{task.phone}}   微信号: {{task.wechat}}
+        </view>
+        <view style="padding: 10rpx 0">
+            <navigator url="../../../../test/undergrad/undergrad?title=此任务匹配测试者&industry={{task.industry}}" open-type="navigate">
+                <label class="tasks__label">查看推荐</label>
+            </navigator>
+        </view>
+    </view>
+</view>
+
+<view style="width: 710rpx;text-align: center;" wx:if="{{done && tasks.length <= 0}}">还没有发布的任务，赶紧发布你的第一个任务吧！</view>
+

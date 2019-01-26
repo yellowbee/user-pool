@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+
+    <!-- 用户 openid -->
+    <view style="margin-top: 40rpx;">
+        <text style="font-size: 17pt;">关键词搜索测试者</text>
+    </view>
+    <view class="flex-wrp" style="height: 300px;flex-direction:row; margin-top: 50rpx;">
+        <navigator url="undergrad/undergrad?title=学生&industry=学生" open-type="navigate">
+            <view class="flex-item bc_white">学生</view>
+        </navigator>
+        <navigator url="undergrad/undergrad?title=互联网&industry=互联网" open-type="navigate">
+            <view class="flex-item bc_white">互联网</view>
+        </navigator>
+        <navigator url="undergrad/undergrad?title=制造业&industry=制造业" open-type="navigate">
+            <view class="flex-item bc_white">制造业</view>
+        </navigator>
+        <navigator url="undergrad/undergrad?title=金融&industry=金融" open-type="navigate">
+            <view class="flex-item bc_white">金融</view>
+        </navigator>
+        <navigator url="undergrad/undergrad?title=媒体&industry=媒体" open-type="navigate">
+            <view class="flex-item bc_white">媒体</view>
+        </navigator>
+        <navigator url="undergrad/undergrad?title=政府&industry=政府" open-type="navigate">
+            <view class="flex-item bc_white">政府</view>
+        </navigator>
+    </view>
+    <!--
+    <view>
+        <text style="font-size: 13pt;text-decoration: underline">没找到？ 换一批</text>
+    </view>
+    -->
+
+</view>

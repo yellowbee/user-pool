@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/test/test",
+    "pages/index/index",
+    "pages/index/login/login",
+    "pages/index/signup/signup",
+    "pages/index/howItWorks/howItWorks",
+    "pages/myTasks/tasks",
+    "pages/myTasks/post/post",
+    "pages/test/undergrad/undergrad",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#184b86",
+    "navigationBarTitleText": "用户池",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/test/test",
+        "text": "找人测试",
+        "iconPath": "images/search_off.png",
+        "selectedIconPath": "images/search_on.png"
+      },
+      {
+        "pagePath": "pages/myTasks/tasks",
+        "text": "我的任务",
+        "iconPath": "images/task_off.png",
+        "selectedIconPath": "images/task_on.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "images/me_off.png",
+        "selectedIconPath": "images/me_on.png"
+      }
+    ]
+  }
+}

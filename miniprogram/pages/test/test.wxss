@@ -1,0 +1,29 @@
+@import "../../common/style/weui.wxss";
+
+page {
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.page-section{
+    margin-bottom: 5rpx;
+}
+.flex-wrp {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.bc_white {
+    background: white;
+    width:249rpx;
+    height: 129rpx;
+}
+
+.flex-item {
+    text-align: center;
+    margin-right: 1rpx;
+    margin-top: 1rpx;
+    padding-top: 120rpx;
+}
